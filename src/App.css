@@ -1,0 +1,11 @@
+
+/* component classes */
+.inline-padding{
+    padding-inline: 4rem;
+}
+
+.link-active{
+    color: red;
+    border-bottom: 5px solid grey;
+    padding: .2rem;
+}

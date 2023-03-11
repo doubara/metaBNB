@@ -1,0 +1,51 @@
+.imageCells{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-row-gap: 1rem;
+    padding-block: 2rem;
+}
+.imageCell{
+    /* layout styles */
+    flex: 0 1 100%;
+
+    /* container appearance styles */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    padding: .5rem;
+}
+.imageCell > img{
+    border-radius: 15px;
+}
+.imageCell > p:after{
+    content: '';
+    height: 100%;
+}
+.imageCell > p > span:last-of-type{
+    display: inline-block;
+    float: right;
+}
+
+/* media queris for screen sizes */
+/* width: 640px --> smaller screens and above */
+@media screen and (min-width: 40em) {
+    .imageCells {
+
+    }
+    .imageCell {
+        flex: 0 1 calc(50% - .5em);
+    }
+}
+
+/* width: 960px --> desktop screens  */
+@media screen and (min-width: 60em) {
+    .imageCells {
+
+    }
+    .imageCell {
+        flex: 0 1 calc(25% - .5em);
+    }
+}
+ 
+ /* width: 832px */

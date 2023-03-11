@@ -1,0 +1,26 @@
+.navBar{
+    padding-block: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList li{
+    padding-inline: 20px;
+    color: inherit;
+}
+
+.navButton{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(0, 0%, 50%);
+    color: black;
+    font: inherit;
+}

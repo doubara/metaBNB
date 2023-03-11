@@ -1,0 +1,66 @@
+.heroSection, .grid2Column{
+    display: grid;
+    gap: 1rem;
+}
+
+.imageLayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.imageGroup:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.imageContainer{
+    height: 42%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: .2rem;
+    
+}
+.heroArticle h1{
+    font-size: 2rem;
+}
+.heroAction{
+    margin-top: 1rem;
+}
+.heroAction input{
+    /* border: 1px solid red; */
+    width: 70%;
+    padding: .5rem;
+    border-radius: 8px;
+    border: none;
+}
+.heroAction button{
+    padding: .5rem;
+    border-radius: 8px;
+    border: none;
+    margin-inline-start: .5rem;
+}
+.imageSlider{
+    /* layout styles */
+    display: flex;
+    justify-content: space-between;
+    /* appearance styles */
+    background-color: hsl(0, 97%, 60%);
+    padding-inline: 4rem;
+    padding-block: 1rem;
+}
+
+.cardInfo h2{
+    padding-inline: 4rem;
+    padding-block-start: 1rem;
+    text-align: center;
+}
+
+/*media queries*/
+@media (min-width: 48em){
+    .heroSection, .grid2Column{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* min-height: 50vh; */
+    }
+}
