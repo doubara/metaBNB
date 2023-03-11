@@ -5,11 +5,11 @@ import IMG3 from '../assets/IMG-20221218-WA0009.jpg';
 import IMG4 from '../assets/IMG-20221218-WA0010.jpg';
 
 const ImageCellContainer = (props) =>{
-
+    console.log(props.cardsArray);
     return (
         <div className={`${style.imageCells} inline-padding`}>
             {props.cardsArray.map(card=>{
-                return <div className={style.imageCell}>
+                return <div key={Math.random()*23457 + +Math.random()*89943} className={style.imageCell}>
                 <img src={card.url} alt="" />
                 <p>
                     <span>lorem</span>

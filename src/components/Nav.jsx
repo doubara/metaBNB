@@ -10,11 +10,15 @@ const Nav = (props)=>{
             </span>
             <ul className={style.navList}>
                 <li>
-                    <NavLink activeClassName='link-active' to='./home'>home</NavLink>
-                    </li>
-                <li><a href="#">ipsum</a></li>
-                <li><a href="#">dolor</a></li>
-                <li><a href="#">sit</a></li>
+                    <NavLink activeClassName='link-active' 
+                    to='/home'>home</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName='link-active' 
+                    to='/products'>products</NavLink>
+                </li>
+                {/* <li><a href="#">dolor</a></li>
+                <li><a href="#">sit</a></li> */}
             </ul>
             <button className={style.navButton}>click me</button>
         </nav>

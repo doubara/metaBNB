@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import { Route, Switch, Exact} from 'react-router-dom'
+import { useState } from 'react';
+import { Route, Switch, Redirect} from 'react-router-dom';
 
 import './App.css'
 import Nav from './components/Nav'
 import FooterComponent from './components/FooterComponent'
 import LandingPage from './pages/LandingPage'
+import ProductPage from './pages/ProductPage'
 
 function App() {
 
@@ -12,8 +13,14 @@ function App() {
     <div className="App">
       <Nav></Nav>
       <Switch>
-        <Route>
-          <LandingPage path='./home'/>
+        <Route path='/' exact>
+          <Redirect to='/home'></Redirect>
+        </Route>
+        <Route path='/home'>
+          <LandingPage/>
+        </Route>
+        <Route path='/products'>
+          <ProductPage></ProductPage>
         </Route>
       </Switch>
       <FooterComponent></FooterComponent>
