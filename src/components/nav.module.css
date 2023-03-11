@@ -4,7 +4,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.logoContainer{
+    width: 180px;
+}
 
 .navList{
     display: flex;
@@ -21,6 +23,6 @@
     border-radius: 10px;
     border: none;
     background-color: hsl(0, 0%, 50%);
-    color: black;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     font: inherit;
 }

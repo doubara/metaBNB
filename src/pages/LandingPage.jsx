@@ -14,13 +14,13 @@ const LandingPage = (props) =>{
         <main>
             <section className={`${style.heroSection} inline-padding`}>
                 <div className={style.heroArticle}>
-                    <h1>lorem ipsum dolor sit amet</h1>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quis quo earum, amet voluptate nihil enim, omnis non recusandae at vel. Quia quibusdam quae reprehenderit nesciunt fugiat ducimus cum nobis!
-                    </div>
+                    <h1>Rent a <span className='emphasis'>Place</span> away from <span className='emphasis'>Home</span> in the <span className='emphasis'>Metaverse</span></h1>
+                    <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone
+                    </p>
                     <div className={style.heroAction}>
                         <input type='text' 
-                        placeholder='some text' />
-                        <button className={style.heroButton}>Click me</button>
+                        placeholder='Search for location' />
+                        <button className={style.heroButton}>Search</button>
                     </div>
                 </div>
                 <div className={style.imageLayout}>
