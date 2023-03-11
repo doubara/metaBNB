@@ -1,4 +1,8 @@
 import style from './footercomponent.module.css';
+import whiteLogo from '../assets/metabnb-white-logo.png';
+import facebookIcon from '../assets/facebook-white.png';
+import twitterIcon from '../assets/twitter-white.png';
+import circleIcon from '../assets/circle-white.png';
 
 const FooterComponent = (props) =>{
 
@@ -6,10 +10,20 @@ const FooterComponent = (props) =>{
         <footer className={`${style.footer} inline-padding`}>
             <div>
                 <div className={style.footerLogo}>
-                    <img src="" alt="meta bnb logo" />
+                    <img src={whiteLogo} alt="meta bnb logo" />
                 </div>
-                <p>lorem</p>
-                <p>ipsum</p>
+                <div className={style.socialIcons}>
+                    <span>
+                        <img src={facebookIcon} alt="facebook icon" />
+                    </span>
+                    <span>
+                        <img src={circleIcon} alt="circle icon" />
+                    </span>
+                    <span>
+                        <img src={twitterIcon} alt="twitter icon" />
+                    </span>
+                </div>
+                
             </div>
             <div>
                 <h3>link header</h3>

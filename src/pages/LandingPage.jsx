@@ -5,6 +5,10 @@ import IMG1 from '../assets/IMG-20221218-WA0007.jpg';
 import IMG2 from '../assets/IMG-20221218-WA0008.jpg';
 import IMG3 from '../assets/IMG-20221218-WA0009.jpg';
 import IMG4 from '../assets/IMG-20221218-WA0010.jpg';
+import mbtoken from '../assets/mbtoken.png';
+import metamask from '../assets/metamask.png';
+import opensea from '../assets/opensea.png';
+
 
 //component imports
 import ImageCellContainer from '../components/ImageCellContainer';
@@ -43,24 +47,38 @@ const LandingPage = (props) =>{
                 </div>
             </section>
             <div className={style.imageSlider}>
-                <h3>Lorem</h3>
-                <h3>Ipsum</h3>
-                <h3>Dolor</h3>
+                <div>
+                    <img src={mbtoken} alt="mbtoken transparent logo and title" srcset="" />
+                </div>
+                <div>
+                    <img src={metamask} alt="meta mask transparent logo and title" srcset="" />
+                </div>
+                <div>
+                    <img src={opensea} alt="opensea transparent logo and title" />
+                </div>
             </div>
             <section className={style.cardInfo}>
-                <h2>lorem ipsum dolor sit amet</h2>
+                <h2>Inspiration for your next adventure</h2>
                 <div>
                     <ImageCellContainer cardsArray={cards}></ImageCellContainer>
                 </div>
             </section>
             <section className={`${style.grid2Column} ${style.moreInfo} inline-padding`}>
                 <div className={`inline-padding`}>
-                    <h2>lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit esse corporis! Totam excepturi qui, dolore, cumque eveniet assumenda fugiat perferendis voluptatibus iste a blanditiis quis minima accusamus aliquam labore?</p>
-                    <button>Click me</button>
+                    <h2>Metabnb NFTs</h2>
+                    <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+                    <button>Learn more</button>
                 </div>
                 <div>
-                    <img src={IMG4} alt="" />
+                    <div className={`${style.rotate1} ${style.infoImg}`}>
+                        <img src={IMG4} alt="" />
+                    </div>
+                    <div className={`${style.rotate2} ${style.infoImg}`}>
+                        <img src={IMG4} alt="" />
+                    </div>
+                    <div className={`${style.rotate3} ${style.infoImg}`}>
+                        <img src={IMG4} alt="" />
+                    </div>
                 </div>
             </section>
         </main>

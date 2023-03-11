@@ -4,121 +4,15 @@ import IMG2 from '../assets/IMG-20221218-WA0008.jpg';
 import IMG3 from '../assets/IMG-20221218-WA0009.jpg';
 import IMG4 from '../assets/IMG-20221218-WA0010.jpg';
 
+import ImageCell from './ImageCell';
+
 const ImageCellContainer = (props) =>{
     console.log(props.cardsArray);
     return (
         <div className={`${style.imageCells} inline-padding`}>
             {props.cardsArray.map(card=>{
-                return <div key={Math.random()*23457 + +Math.random()*89943} className={style.imageCell}>
-                <img src={card.url} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
+                return <ImageCell url={card.url} key={Math.random()*23457 + +Math.random()*89943}></ImageCell>
             })}
-            {/* <div className={style.imageCell}>
-                <img src={IMG1} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG2} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG3} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG4} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div> */}
-            
-            {/* <div className={style.imageCell}>
-                <img src={IMG1} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG2} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG3} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div>
-            <div className={style.imageCell}>
-                <img src={IMG4} alt="" />
-                <p>
-                    <span>lorem</span>
-                    <span>ipsum</span>
-                </p>
-                <p>
-                    <span>dolor</span>
-                    <span>sit amet</span>
-                </p>
-                <span>*****</span>
-            </div> */}
         </div>
     )
 }

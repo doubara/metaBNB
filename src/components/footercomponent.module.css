@@ -6,3 +6,10 @@
     align-items: center;
     padding-block: 4rem;
 }
+.footerLogo{
+    width: 180px;
+}
+.footer > div:first-of-type{
+    border: 1px solid red;
+    height: 100%;
+}
