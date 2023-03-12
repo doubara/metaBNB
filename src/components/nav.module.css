@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: .8rem;
+    position: relative;
 }
 .logoContainer{
     width: 180px;
@@ -23,4 +24,81 @@
     background-color: hsl(0, 0%, 50%);
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     font: inherit;
+}
+.hamburger{
+    display: none;
+    
+}
+.mobileButton{
+    display: none;
+}
+@media  (max-width: 52rem) {
+    .desktopButton{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .hamburger{
+        display: block;
+        background: none;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+    .hamburger > span{
+        display: inline-block;
+        width: 5px;
+        height: 25px;
+        background-color: var(--primary-color);
+        margin-inline: .1rem;
+        transition: 500ms ease-in-out;
+        /* border: 1px solid red; */
+    }
+    .mobileButton{
+        display: flex;
+    }
+    .navList{
+        position: absolute;
+        top: 0%;
+        left: -500px;
+        width: 50%;
+        height: 100vh;
+        background-color: hsl(0, 0%, 80%);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1rem;
+        padding: 4rem 2rem;
+        /* transform: translateX(-500px); */
+        backdrop-filter: blur(10px);
+        opacity: 93%;
+        transition: 500ms ease-in-out;
+        /* z-index: 10; */
+    }
+    .navList > li ~ li{
+        margin-top: 2rem;
+    }
+    .show{
+        /* transform: translateX(0px); */
+        left: 0%;
+        transition: 500ms ease-in-out;
+    }
+    .spanRotate > span:nth-child(2){
+        height: 0px;
+    }
+    .spanRotate > span:nth-child(1){
+        transform: translateX(8px)rotateZ(-40deg);
+    }
+    .spanRotate > span:nth-child(3){
+        transform: translateX(-8px)rotateZ(40deg);
+    }
+    /* .show::before{
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 50%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    } */
 }

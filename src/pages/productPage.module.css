@@ -7,7 +7,7 @@
 .productCategory > p{
     padding: .5rem 1rem;
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
 }
 .productCategory > p:last-of-type{
@@ -18,4 +18,22 @@
     display: inline-block;
     margin-left: 1rem;
     vertical-align: middle;
+}
+.selectHome{
+    padding: .5rem 1rem;
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    background: none;
+    color: black;
+    font: inherit;
+    display: none;
+    font-size: .9rem;
+}
+@media (max-width: 56rem) {
+    .selectHome{
+        display: block;
+    }
+    .hideHome{
+        display: none;
+    }
 }

@@ -34,14 +34,25 @@ const ProductPage = (props) =>{
     return (
         <div className={`${style.productPage} inline-padding`}>
             <div className={style.productCategory}>
-                <p>Resturant</p>
-                <p>Cottage</p>
-                <p>Castle</p>
-                <p>Fantasy city</p>
-                <p>beach</p>
-                <p>cabins</p>
-                <p>off-grid</p>
-                <p>farms</p>
+                <select className={style.selectHome} name="homes" id="homes-select">
+                <option value="">Select a home</option>
+                <option value='Resturant'>Resturant</option>
+                <option value='Cottage'>Cottage</option>
+                <option value='Castle'>Castle</option>
+                <option value='Fantasy city'>Fantasy city</option>
+                <option value='beach'>beach</option>
+                <option value='cabins'>cabins</option>
+                <option value='off'>off-grid</option>
+                <option value='farms'>farms</option>
+                </select>
+                <p className={style.hideHome}>Resturant</p>
+                <p className={style.hideHome}>Cottage</p>
+                <p className={style.hideHome}>Castle</p>
+                <p className={style.hideHome}>Fantasy city</p>
+                <p className={style.hideHome}>beach</p>
+                <p className={style.hideHome}>cabins</p>
+                <p className={style.hideHome}>off-grid</p>
+                <p className={style.hideHome}>farms</p>
                 <p>location <span><img src={settingLogo} alt="" /></span></p>
             </div>
             <ImageCellContainer cardsArray={cards.current}></ImageCellContainer>
