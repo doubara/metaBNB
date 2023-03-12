@@ -24,6 +24,8 @@ import IMG18 from '../assets/IMG-20221218-WA0028.jpg';
 import IMG19 from '../assets/IMG-20221218-WA0029.jpg';
 import IMG20 from '../assets/IMG-20221218-WA0030.jpg';
 
+import settingLogo from '../assets/setting-5.png';
+
 
 const ProductPage = (props) =>{
     const cards = useRef(
@@ -32,12 +34,15 @@ const ProductPage = (props) =>{
     return (
         <div className={`${style.productPage} inline-padding`}>
             <div className={style.productCategory}>
-                <p>lorem</p>
-                <p>lorem</p>
-                <p>lorem</p>
-                <p>lorem</p>
-                <p>lorem</p>
-                <p>lorem</p>
+                <p>Resturant</p>
+                <p>Cottage</p>
+                <p>Castle</p>
+                <p>Fantasy city</p>
+                <p>beach</p>
+                <p>cabins</p>
+                <p>off-grid</p>
+                <p>farms</p>
+                <p>location <span><img src={settingLogo} alt="" /></span></p>
             </div>
             <ImageCellContainer cardsArray={cards.current}></ImageCellContainer>
         </div>

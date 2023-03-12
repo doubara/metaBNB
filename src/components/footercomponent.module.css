@@ -5,11 +5,26 @@
     justify-content: space-between;
     align-items: center;
     padding-block: 4rem;
+    font-size: .8rem;
 }
 .footerLogo{
     width: 180px;
 }
-.footer > div:first-of-type{
-    border: 1px solid red;
-    height: 100%;
+.socialIcons{
+    margin-top: 2rem;
+}
+.socialIcons > span{
+    display: inline-block;
+
+}
+.socialIcons > span:not(:first-of-type){
+    margin-left: 1rem;
+}
+.copyright{
+    font-size: .8rem;
+    margin-top: 2rem;
+}
+.footer li{
+    color: hsl(0, 0%, 80%);
+    margin-top: .5rem;
 }

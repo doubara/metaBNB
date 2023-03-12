@@ -23,7 +23,7 @@ const FooterComponent = (props) =>{
                         <img src={twitterIcon} alt="twitter icon" />
                     </span>
                 </div>
-                
+                <p className={style.copyright}>@2023 copyright</p>
             </div>
             <div>
                 <h3>link header</h3>

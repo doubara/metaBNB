@@ -55,3 +55,6 @@ button{
   border-radius: 10px;
   border: none;
 }
+ul{
+  padding: 0px;
+}

@@ -1,10 +1,21 @@
 .productCategory{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-block: 2rem;
 }
-.productCategory > *{
+.productCategory > p{
     padding: .5rem 1rem;
-    background-color: grey;
     border-radius: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+.productCategory > p:last-of-type{
+    border: 1px solid hsl(0, 0%, 50%);
+
+}
+.productCategory > p:last-of-type span{
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: middle;
 }
